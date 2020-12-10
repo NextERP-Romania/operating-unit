@@ -12,7 +12,9 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
     _inherit = "purchase.request.line.make.purchase.order"
 
     operating_unit_id = fields.Many2one(
-        "operating.unit", string="Operating Unit", readonly=True,
+        "operating.unit",
+        string="Operating Unit",
+        readonly=True,
     )
 
     @api.model
